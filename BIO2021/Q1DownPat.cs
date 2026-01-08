@@ -11,13 +11,23 @@ public class Q1DownPat
 {
     public static void Run()
     {
-        Split("DE");
+        
     }
     
-    public static bool CheckPat(string input)
+    private static bool CheckPat(string input)
     {
-        leftPat
-        return true;
+        if (input.Length == 2)
+        {
+            if (IsPat(input[0].ToString(), input[1].ToString()))
+            {
+                return true;
+            }
+        }
+        else if (input.Length > 2)
+        {
+            Split(input);
+        }
+        return false;
     }
     
     private static (string, string) Split(string input)
