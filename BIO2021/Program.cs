@@ -17,7 +17,7 @@ public class DownPat
 {
     public static void Main()
     {
-        Q1DownPat.Run();
+        Q1DownPat.PartA();
     }
 }
 
